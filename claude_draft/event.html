@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events｜喫茶 綴ル</title>
+  <meta name="description" content="月2回の読書探訪イベント。本を入り口に、静かに語り合う場。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">喫茶 綴ル</a>
+      <nav class="site-nav" aria-label="メインメニュー">
+        <ul class="nav-list" id="navList">
+          <li><a href="about.html">About</a></li>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="event.html" aria-current="page">Events</a></li>
+          <li><a href="access.html">Access</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-sm">お問い合わせ</a>
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="navList">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section">
+      <div class="section-head">
+        <h1 class="section-title">Events</h1>
+        <p class="section-sub">読書イベント</p>
+      </div>
+
+      <!-- 次回のイベント -->
+      <h2 style="font-family:var(--font-heading);font-size:1.3rem;margin-bottom:1.5rem;">次回のイベント</h2>
+      <div class="event-next">
+        <div class="placeholder"></div>
+        <div>
+          <h3>読書会「旅する本棚」</h3>
+          <dl class="event-meta">
+            <div><dt>日時：</dt><dd style="display:inline;">6/2（日）14:00–16:00</dd></div><br>
+            <div><dt>テーマ：</dt><dd style="display:inline;">旅と風景の本</dd></div><br>
+            <div><dt>定員：</dt><dd style="display:inline;">10名</dd></div>
+          </dl>
+          <a href="contact.html" class="btn btn-primary">イベント詳細・予約</a>
+        </div>
+      </div>
+
+      <!-- 過去のイベントレポート -->
+      <h2 style="font-family:var(--font-heading);font-size:1.3rem;margin-bottom:1rem;">過去のイベントレポート</h2>
+      <div class="report-item">
+        <div class="placeholder"></div>
+        <div>
+          <h4 style="font-family:var(--font-heading);margin-bottom:0.4rem;">第3回 読書会「夜の本棚」</h4>
+          <p style="font-size:0.9rem;color:var(--color-sub);">静かな夜に、それぞれの一冊を持ち寄って。</p>
+        </div>
+      </div>
+      <div class="report-item">
+        <div class="placeholder"></div>
+        <div>
+          <h4 style="font-family:var(--font-heading);margin-bottom:0.4rem;">第2回 珈琲と短編</h4>
+          <p style="font-size:0.9rem;color:var(--color-sub);">短編小説を読みながら、感想を語り合いました。</p>
+        </div>
+      </div>
+      <div class="report-item">
+        <div class="placeholder"></div>
+        <div>
+          <h4 style="font-family:var(--font-heading);margin-bottom:0.4rem;">第1回 はじまりの読書会</h4>
+          <p style="font-size:0.9rem;color:var(--color-sub);">記念すべき第1回。8名の方にご参加いただきました。</p>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:1.5rem;"><a href="#" class="btn btn-sm">すべてのレポートを見る</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-logo">喫茶 綴ル</p>
+      <p class="footer-info">営業時間 10:00–19:00（火曜定休）<br>〒000-0000 東京都〇〇区〇〇1-2-3</p>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <a href="about.html">About</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="books.html">Books</a>
+        <a href="event.html">Events</a>
+        <a href="access.html">Access</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© 2026 喫茶 綴ル</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

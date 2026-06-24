@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>喫茶 綴ル｜静寂と読書の時間を、コーヒーと。</title>
+  <meta name="description" content="喫茶 綴ルは、心ゆるめる読書空間。深煎り珈琲と本が、静かにあなたを迎えます。">
+
+  <!-- フォント（Shippori Mincho + Noto Sans JP） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS（reset → style の順。後勝ち） -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ 共通ヘッダー（全ページ同じ。直すときは全ファイル揃えて直す） ============ -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">喫茶 綴ル</a>
+      <nav class="site-nav" aria-label="メインメニュー">
+        <ul class="nav-list" id="navList">
+          <li><a href="about.html">About</a></li>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="access.html">Access</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-sm">お問い合わせ</a>
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="navList">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ ヒーロー ============ -->
+    <section class="container hero">
+      <div class="hero-image placeholder"></div>
+      <div class="hero-copy">
+        <h1>静寂と読書の<br>時間を、コーヒーと。</h1>
+        <p>喫茶 綴ルは、心ゆるめる読書空間。<br>本とコーヒーが、静かにあなたを迎えます。</p>
+        <div class="hero-actions">
+          <a href="coffee.html" class="btn btn-primary">Coffeeを見る</a>
+          <a href="event.html" class="btn">Eventを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 新着情報 ============ -->
+    <section class="container section">
+      <div class="news">
+        <h2>新着情報</h2>
+        <ul class="news-list">
+          <li><time datetime="2026-05-20">5/20</time><span>読書会「旅する本棚」開催のお知らせ</span></li>
+          <li><time datetime="2026-05-18">5/18</time><span>今週のおすすめコーヒー「深煎りブラジル」入荷</span></li>
+          <li><time datetime="2026-05-15">5/15</time><span>新刊「この本ならこのコーヒー」追加しました</span></li>
+        </ul>
+        <p class="news-more"><a href="#" class="btn btn-sm">一覧を見る</a></p>
+      </div>
+    </section>
+
+    <!-- ============ 2つの導線（★課題の「工夫」＝一人 / 交流） ============ -->
+    <section class="container section">
+      <div class="flows">
+        <div class="flow-card">
+          <h3>一人で楽しみたい方へ</h3>
+          <p>静かな空間で読書に集中できる席。<br>一人の時間を、ゆっくり過ごせます。</p>
+          <a href="coffee.html" class="btn">Coffeeへ</a>
+        </div>
+        <div class="flow-card">
+          <h3>交流を楽しみたい方へ</h3>
+          <p>読書会やイベントで、<br>本を入り口に人とつながれます。</p>
+          <a href="event.html" class="btn">Eventへ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 店内の雰囲気 ============ -->
+    <section class="container section">
+      <div class="section-head">
+        <h2 class="section-title">店内の雰囲気</h2>
+      </div>
+      <div class="gallery">
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+      </div>
+    </section>
+
+    <!-- ============ 営業情報の帯 ============ -->
+    <section class="container">
+      <div class="info-strip">
+        <p>営業時間 10:00–19:00（火曜定休）<br>〒000-0000 東京都〇〇区〇〇1-2-3</p>
+        <ul class="social" aria-label="SNS">
+          <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+          <li><a href="contact.html" aria-label="メール"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></a></li>
+        </ul>
+        <a href="access.html" class="btn btn-sm">Accessを見る</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 共通フッター ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-logo">喫茶 綴ル</p>
+      <p class="footer-info">営業時間 10:00–19:00（火曜定休）<br>〒000-0000 東京都〇〇区〇〇1-2-3</p>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <a href="about.html">About</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="books.html">Books</a>
+        <a href="event.html">Events</a>
+        <a href="access.html">Access</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© 2026 喫茶 綴ル</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

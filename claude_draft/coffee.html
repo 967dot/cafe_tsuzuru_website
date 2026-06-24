@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee｜喫茶 綴ル</title>
+  <meta name="description" content="喫茶 綴ルのメニュー。深煎り珈琲とフード、セット。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">喫茶 綴ル</a>
+      <nav class="site-nav" aria-label="メインメニュー">
+        <ul class="nav-list" id="navList">
+          <li><a href="about.html">About</a></li>
+          <li><a href="coffee.html" aria-current="page">Coffee</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="access.html">Access</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-sm">お問い合わせ</a>
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="navList">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section">
+      <div class="section-head">
+        <h1 class="section-title">Coffee</h1>
+        <p class="section-sub">コーヒー・フード</p>
+      </div>
+
+      <!-- タブ（見た目だけのラフ。切替JSは後で足してもOK） -->
+      <div class="menu-tabs">
+        <button class="is-active">コーヒー</button>
+        <button>フード</button>
+        <button>セット</button>
+      </div>
+
+      <!-- メニュー一覧 -->
+      <div class="menu-list">
+        <div class="menu-item">
+          <div class="placeholder"></div>
+          <div>
+            <h4>本日のコーヒー</h4>
+            <p class="opt">Hot / Ice</p>
+          </div>
+          <p class="price">¥600</p>
+        </div>
+        <div class="menu-item">
+          <div class="placeholder"></div>
+          <div>
+            <h4>カフェラテ</h4>
+            <p class="opt">Hot / Ice</p>
+          </div>
+          <p class="price">¥650</p>
+        </div>
+        <div class="menu-item">
+          <div class="placeholder"></div>
+          <div>
+            <h4>モーニングセット</h4>
+            <p class="opt">コーヒー＋トースト＋ゆで卵</p>
+          </div>
+          <p class="price">¥880</p>
+        </div>
+      </div>
+
+      <div class="section-head" style="margin-top:3rem;">
+        <a href="#" class="btn">メニュー一覧を見る</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-logo">喫茶 綴ル</p>
+      <p class="footer-info">営業時間 10:00–19:00（火曜定休）<br>〒000-0000 東京都〇〇区〇〇1-2-3</p>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <a href="about.html">About</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="books.html">Books</a>
+        <a href="event.html">Events</a>
+        <a href="access.html">Access</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© 2026 喫茶 綴ル</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
