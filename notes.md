@@ -21,3 +21,11 @@
 - ただし、インスタ・X・メールのアイコンはどこかに残したい
 - →フッター内に置く
 - 住所の下、ナビの上が位置的に良さそう
+
+# Topページ以外のAbout, Coffee, Books, Events, Access, Contact（お問い合わせ）のHeaderのロゴを設置
+
+- Topページにレイアウトを合わせる
+
+# Topページ以外のAbout, Coffee, Books, Events, Access, Contact（お問い合わせ）のFooterのインスタ・X・メールのアイコンを設置
+
+- Topページにレイアウトを合わせる

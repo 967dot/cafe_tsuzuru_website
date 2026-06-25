@@ -1,105 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Access｜喫茶 綴ル</title>
-  <meta name="description" content="喫茶 綴ルへのアクセス、営業時間、営業カレンダー。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">喫茶 綴ル</a>
-      <nav class="site-nav" aria-label="メインメニュー">
-        <ul class="nav-list" id="navList">
-          <li><a href="about.html">About</a></li>
-          <li><a href="coffee.html">Coffee</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="event.html">Events</a></li>
-          <li><a href="access.html" aria-current="page">Access</a></li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <a href="contact.html" class="btn btn-sm">お問い合わせ</a>
-        <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="navList">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="container section">
-      <div class="section-head">
-        <h1 class="section-title">Access</h1>
-        <p class="section-sub">アクセス</p>
-      </div>
-
-      <div class="access-grid">
-        <!-- 地図（後でGoogleマップのiframeに差し替え可） -->
-        <div class="map placeholder"></div>
-
-        <div class="access-info">
-          <dl>
-            <dt>住所</dt>
-            <dd>〒000-0000<br>東京都〇〇区〇〇1-2-3</dd>
-            <dt>アクセス</dt>
-            <dd>〇〇駅から徒歩5分</dd>
-            <dt>営業時間</dt>
-            <dd>10:00–19:00</dd>
-            <dt>定休日</dt>
-            <dd>火曜日</dd>
-          </dl>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Access｜喫茶 綴ル</title>
+    <meta
+      name="description"
+      content="喫茶 綴ルへのアクセス、営業時間、営業カレンダー。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-text">喫茶 綴ル</span>
+        </a>
+        <nav class="site-nav" aria-label="メインメニュー">
+          <ul class="nav-list" id="navList">
+            <li><a href="about.html">About</a></li>
+            <li><a href="coffee.html">Coffee</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="access.html" aria-current="page">Access</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="contact.html" class="btn btn-sm">お問い合わせ</a>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+            aria-controls="navList"
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
+    </header>
 
-      <!-- 営業カレンダー -->
-      <div class="calendar-head">
-        <h2 style="font-family:var(--font-heading);font-size:1.3rem;">営業カレンダー</h2>
-        <button class="cal-next" type="button" aria-label="翌月を見る">&rsaquo;</button>
+    <main>
+      <section class="container section">
+        <div class="section-head">
+          <h1 class="section-title">Access</h1>
+          <p class="section-sub">アクセス</p>
+        </div>
+
+        <div class="access-grid">
+          <!-- 地図（後でGoogleマップのiframeに差し替え可） -->
+          <div class="map placeholder"></div>
+
+          <div class="access-info">
+            <dl>
+              <dt>住所</dt>
+              <dd>〒000-0000<br />東京都〇〇区〇〇1-2-3</dd>
+              <dt>アクセス</dt>
+              <dd>〇〇駅から徒歩5分</dd>
+              <dt>営業時間</dt>
+              <dd>10:00–19:00</dd>
+              <dt>定休日</dt>
+              <dd>火曜日</dd>
+            </dl>
+          </div>
+        </div>
+
+        <!-- 営業カレンダー -->
+        <div class="calendar-head">
+          <h2 style="font-family: var(--font-heading); font-size: 1.3rem">
+            営業カレンダー
+          </h2>
+          <button class="cal-next" type="button" aria-label="翌月を見る">
+            &rsaquo;
+          </button>
+        </div>
+        <table class="calendar">
+          <thead>
+            <tr>
+              <th>日</th>
+              <th>月</th>
+              <th class="closed">火</th>
+              <th>水</th>
+              <th>木</th>
+              <th>金</th>
+              <th>土</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>○</td>
+              <td>○</td>
+              <td class="closed">―</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+            </tr>
+            <tr>
+              <td>○</td>
+              <td>○</td>
+              <td class="closed">―</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+            </tr>
+            <tr>
+              <td>○</td>
+              <td>○</td>
+              <td class="closed">―</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+            </tr>
+            <tr>
+              <td>○</td>
+              <td>○</td>
+              <td class="closed">―</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+              <td>○</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="section-head" style="margin-top: 3rem">
+          <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ 共通フッター ============ -->
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer-logo">喫茶 綴ル</p>
+        <p class="footer-info">
+          <span>営業時間 10:00–19:00</span><br />
+          <span>定休日 火曜</span><br />
+          <span><a href="tel:0300000000">TEL 03-0000-0000</a></span
+          ><br />
+          <span>〒000-0000 東京都〇〇区〇〇1-2-3</span>
+        </p>
+        <ul class="social" aria-label="SNS">
+          <li>
+            <a href="#" aria-label="Instagram">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="1"
+                  fill="currentColor"
+                  stroke="none"
+                /></svg
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="X"
+              ><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                /></svg
+            ></a>
+          </li>
+          <li>
+            <a href="contact.html" aria-label="メール"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 6 10 7L22 6" /></svg
+            ></a>
+          </li>
+        </ul>
+        <nav class="footer-nav" aria-label="フッターメニュー">
+          <a href="about.html">About</a>
+          <a href="coffee.html">Coffee</a>
+          <a href="books.html">Books</a>
+          <a href="event.html">Events</a>
+          <a href="access.html">Access</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p class="copyright">© 2026 喫茶 綴ル</p>
       </div>
-      <table class="calendar">
-        <thead>
-          <tr>
-            <th>日</th><th>月</th><th class="closed">火</th><th>水</th><th>木</th><th>金</th><th>土</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>○</td><td>○</td><td class="closed">―</td><td>○</td><td>○</td><td>○</td><td>○</td></tr>
-          <tr><td>○</td><td>○</td><td class="closed">―</td><td>○</td><td>○</td><td>○</td><td>○</td></tr>
-          <tr><td>○</td><td>○</td><td class="closed">―</td><td>○</td><td>○</td><td>○</td><td>○</td></tr>
-          <tr><td>○</td><td>○</td><td class="closed">―</td><td>○</td><td>○</td><td>○</td><td>○</td></tr>
-        </tbody>
-      </table>
+    </footer>
 
-      <div class="section-head" style="margin-top:3rem;">
-        <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-logo">喫茶 綴ル</p>
-      <p class="footer-info">営業時間 10:00–19:00（火曜定休）<br>〒000-0000 東京都〇〇区〇〇1-2-3</p>
-      <nav class="footer-nav" aria-label="フッターメニュー">
-        <a href="about.html">About</a>
-        <a href="coffee.html">Coffee</a>
-        <a href="books.html">Books</a>
-        <a href="event.html">Events</a>
-        <a href="access.html">Access</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <p class="copyright">© 2026 喫茶 綴ル</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
