@@ -342,18 +342,6 @@ span.logo-mark {
   aspect-ratio: 1 / 1;
 }
 
-/* --- Top: 営業情報の帯 --- */
-.info-strip {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 1.5rem 0;
-  border-top: 1px solid var(--color-neutral);
-  font-size: 0.9rem;
-}
-
 /* --- About --- */
 .owner {
   display: grid;
@@ -608,8 +596,11 @@ span.logo-mark {
 /* SNSアイコン（フッター帯） */
 .social {
   display: flex;
+  justify-content: center; /* 中央寄せ */
   gap: 0.75rem;
+  margin-bottom: 1.5rem; /* 下のナビとの間隔 */
 }
+
 .social a {
   display: flex;
   align-items: center;
@@ -618,16 +609,16 @@ span.logo-mark {
   height: 36px;
   border: 1px solid var(--color-neutral);
   border-radius: 50%;
-  color: var(--color-main);
+  color: var(--color-base); /* ← 暗いフッター用に明るい色へ */
   transition:
     background 0.2s,
     color 0.2s,
     border-color 0.2s;
 }
 .social a:hover {
-  background: var(--color-main);
+  background: var(--color-accent); /* ← ホバーで金 */
   color: var(--color-base);
-  border-color: var(--color-main);
+  border-color: var(--color-accent); /* ← ホバーで金 */
 }
 .social svg {
   width: 16px;
