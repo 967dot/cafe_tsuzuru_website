@@ -356,6 +356,8 @@ span.logo-mark {
 }
 .owner-image {
   aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
 }
 .owner h3 {
   font-size: 1.5rem;
