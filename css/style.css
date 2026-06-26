@@ -337,11 +337,13 @@ span.logo-mark {
 /* --- Top: 店内ギャラリー --- */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-.gallery .placeholder {
+.gallery img {
   aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* --- About --- */
