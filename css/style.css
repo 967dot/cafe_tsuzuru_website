@@ -146,11 +146,13 @@ img {
   font-size: 1.3rem;
   letter-spacing: 0.15em;
 }
-.logo-mark {
-  width: 32px;
-  height: 32px;
+.logo img {
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
   object-fit: contain; /* <img> に差し替えたとき用 */
+  background: var(--color-accent);
+  border-radius: 50%;
 }
 /* 画像が無い間のプレースホルダ（span のとき。丸が嫌なら border-radius を消す） */
 span.logo-mark {
