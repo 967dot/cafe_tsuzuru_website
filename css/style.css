@@ -722,26 +722,34 @@ span.logo-mark {
     display: block;
   }
 
-  /* 2カラム系を全部1カラムに */
-  .hero,
-  .flows,
-  .owner,
-  .feature-cards,
-  .photo-row,
-  .event-next,
-  .access-grid {
-    grid-template-columns: 1fr;
+  /* ヒーローのテキスト・ボタンをスマホ/タブレットで中央揃えに */
+  .hero-copy {
+    text-align: center;
   }
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
+  .hero-actions {
+    justify-content: center;
   }
-  .book-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .menu-item {
-    grid-template-columns: 80px 1fr;
-  }
-  .menu-item .price {
-    grid-column: 2;
-  }
+}
+
+/* 2カラム系を全部1カラムに */
+.hero,
+.flows,
+.owner,
+.feature-cards,
+.photo-row,
+.event-next,
+.access-grid {
+  grid-template-columns: 1fr;
+}
+.gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+.book-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.menu-item {
+  grid-template-columns: 80px 1fr;
+}
+.menu-item .price {
+  grid-column: 2;
 }
