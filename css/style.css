@@ -398,7 +398,57 @@ span.logo-mark {
   object-fit: cover;
   width: 100%;
 }
+/* TOPページの「店内の雰囲気」をスライドショーに変更 */
+.gallery--slide {
+  position: relative;
+  aspect-ratio: 16 / 9; /* 1枚分の枠だけ用意 */
+  display: block; /* grid をやめて、画像を重ねる */
+}
+.gallery--slide img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: gallerySlide 18s infinite; /* 6枚 × 3秒 = 18秒で1周 */
+}
+.gallery--slide img:nth-child(1) {
+  animation-delay: 0s;
+}
+.gallery--slide img:nth-child(2) {
+  animation-delay: 3s;
+}
+.gallery--slide img:nth-child(3) {
+  animation-delay: 6s;
+}
+.gallery--slide img:nth-child(4) {
+  animation-delay: 9s;
+}
+.gallery--slide img:nth-child(5) {
+  animation-delay: 12s;
+}
+.gallery--slide img:nth-child(6) {
+  animation-delay: 15s;
+}
 
+@keyframes gallerySlide {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  } /* フェードイン */
+  14% {
+    opacity: 1;
+  } /* 表示キープ */
+  17% {
+    opacity: 0;
+  } /* フェードアウト */
+  100% {
+    opacity: 0;
+  }
+}
 /* --- About --- */
 .owner {
   display: grid;
