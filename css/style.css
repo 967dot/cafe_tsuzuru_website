@@ -463,11 +463,12 @@ span.logo-mark {
   width: 100%;
 }
 .owner h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 1.25rem;
 }
 .owner p {
-  margin-bottom: 1rem;
+  line-height: 2.4;
+  margin-bottom: 1.25rem;
 }
 
 .feature-cards {
