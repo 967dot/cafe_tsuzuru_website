@@ -189,6 +189,17 @@ span.logo-mark {
   gap: 1rem;
 }
 
+/* ヘッダーの「お問い合わせ」の枠線、ホバー時をアクセントカラーにする */
+.header-actions .btn-sm {
+  border-color: var(--color-accent);
+  color: var(--color-main);
+}
+
+.header-actions .btn-sm:hover {
+  background: var(--color-accent);
+  color: var(--color-base);
+}
+
 /* ハンバーガー（スマホ時のみ表示） */
 .hamburger {
   display: none;
