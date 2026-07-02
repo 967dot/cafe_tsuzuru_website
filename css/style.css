@@ -323,6 +323,12 @@ span.logo-mark {
   padding-left: 0.75rem;
   margin-bottom: 1.5rem;
 }
+/* 新着情報をスクロール可能にする */
+.news-list {
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
 .news-list li {
   display: flex;
   gap: 1.5rem;
