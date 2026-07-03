@@ -28,6 +28,102 @@ menuItems.forEach((item) => {
   }
 });
 
+const calendarBody = document.getElementById("calendarBody");
+const calendarTitle = document.getElementById("calendarTitle");
+const calendarPrev = document.getElementById("calendarPrev");
+const calendarNext = document.getElementById("calendarNext");
+
+if (calendarBody && calendarTitle && calendarPrev && calendarNext) {
+  const calendarYear = 2026;
+
+  // 2026年1月〜7月のみ表示
+  // JavaScriptでは 0 = 1月, 1 = 2月, ... 6 = 7月
+  const startMonth = 0;
+  const endMonth = 6;
+
+  let currentMonth = startMonth;
+
+  // 0: 日曜, 1: 月曜, 2: 火曜
+  const closedWeekday = 2;
+
+  // 臨時休業日を入れたい場合はここに追加
+  const specialClosedDates = [
+    // "2026-01-01",
+    // "2026-05-06",
+  ];
+
+  function formatDate(year, month, day) {
+    const monthText = String(month + 1).padStart(2, "0");
+    const dayText = String(day).padStart(2, "0");
+    return `${year}-${monthText}-${dayText}`;
+  }
+
+  function renderCalendar(month) {
+    calendarBody.innerHTML = "";
+    calendarTitle.textContent = `${calendarYear}年${month + 1}月`;
+
+    const firstDate = new Date(calendarYear, month, 1);
+    const lastDate = new Date(calendarYear, month + 1, 0);
+
+    const firstDay = firstDate.getDay();
+    const lastDay = lastDate.getDate();
+
+    let day = 1;
+
+    for (let week = 0; week < 6; week++) {
+      const tr = document.createElement("tr");
+
+      for (let weekday = 0; weekday < 7; weekday++) {
+        const td = document.createElement("td");
+
+        if ((week === 0 && weekday < firstDay) || day > lastDay) {
+          td.classList.add("is-empty");
+          td.textContent = "";
+        } else {
+          const dateText = formatDate(calendarYear, month, day);
+          const isClosed =
+            weekday === closedWeekday || specialClosedDates.includes(dateText);
+
+          td.textContent = day;
+
+          if (isClosed) {
+            td.classList.add("is-closed");
+          }
+
+          day++;
+        }
+
+        tr.appendChild(td);
+      }
+
+      calendarBody.appendChild(tr);
+
+      if (day > lastDay) {
+        break;
+      }
+    }
+
+    calendarPrev.disabled = month === startMonth;
+    calendarNext.disabled = month === endMonth;
+  }
+
+  calendarPrev.addEventListener("click", () => {
+    if (currentMonth > startMonth) {
+      currentMonth--;
+      renderCalendar(currentMonth);
+    }
+  });
+
+  calendarNext.addEventListener("click", () => {
+    if (currentMonth < endMonth) {
+      currentMonth++;
+      renderCalendar(currentMonth);
+    }
+  });
+
+  renderCalendar(currentMonth);
+}
+
 /* =========================================================
    script.js — スマホのハンバーガーメニュー開閉
    学んだ classList.toggle / addEventListener / aria の実戦版

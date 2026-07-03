@@ -845,6 +845,99 @@ span.logo-mark {
   color: var(--color-accent);
 }
 
+.calendar-panel {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.calendar-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-title {
+  min-width: 160px;
+  text-align: center;
+  font-family: var(--font-ja-heading);
+  font-size: 1.3rem;
+}
+
+.calendar-nav {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-family: var(--font-en-heading);
+  font-size: 1.2rem;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    opacity 0.2s;
+}
+
+.calendar-nav:hover {
+  background: var(--color-accent);
+  color: var(--color-base);
+}
+
+.calendar-nav:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.calendar-nav:disabled:hover {
+  background: transparent;
+  color: var(--color-accent);
+}
+
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid var(--color-neutral);
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.calendar th {
+  background: rgba(255, 250, 242, 0.7);
+  color: var(--color-sub);
+}
+
+.calendar td {
+  height: 52px;
+}
+
+.calendar .is-empty {
+  background: rgba(207, 200, 187, 0.25);
+}
+
+.calendar .is-closed {
+  color: var(--color-accent);
+  background: rgba(176, 141, 87, 0.1);
+}
+
+.calendar .is-closed::after {
+  content: "休";
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.7rem;
+}
+
+.calendar-note {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-sub);
+}
+
 /* --- Contact --- */
 .contact-form {
   max-width: 640px;

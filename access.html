@@ -85,65 +85,53 @@
         </div>
 
         <!-- 営業カレンダー -->
-        <div class="calendar-head">
-          <h2 style="font-family: var(--font-heading); font-size: 1.3rem">
-            営業カレンダー
-          </h2>
-          <button class="cal-next" type="button" aria-label="翌月を見る">
-            &rsaquo;
-          </button>
-        </div>
-        <table class="calendar">
-          <thead>
-            <tr>
-              <th>日</th>
-              <th>月</th>
-              <th class="closed">火</th>
-              <th>水</th>
-              <th>木</th>
-              <th>金</th>
-              <th>土</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>○</td>
-              <td>○</td>
-              <td class="closed">―</td>
-              <td>○</td>
-              <td>○</td>
-              <td>○</td>
-              <td>○</td>
-            </tr>
-            <tr>
-              <td>○</td>
-              <td>○</td>
-              <td class="closed">―</td>
-              <td>○</td>
-              <td>○</td>
-              <td>○</td>
-              <td>○</td>
-            </tr>
-            <tr>
-              <td>○</td>
-              <td>○</td>
-              <td class="closed">―</td>
-              <td>○</td>
-              <td>○</td>
-              <td>○</td>
-              <td>○</td>
-            </tr>
-            <tr>
-              <td>○</td>
-              <td>○</td>
-              <td class="closed">―</td>
-              <td>○</td>
-              <td>○</td>
-              <td>○</td>
-              <td>○</td>
-            </tr>
-          </tbody>
-        </table>
+        <section class="container section">
+          <div class="section-head">
+            <h2 class="section-title">営業カレンダー</h2>
+            <p class="section-sub">Business Calendar</p>
+          </div>
+
+          <div class="calendar-panel">
+            <div class="calendar-head">
+              <button
+                type="button"
+                class="calendar-nav calendar-prev"
+                id="calendarPrev"
+                aria-label="前の月を表示"
+              >
+                &lt;
+              </button>
+
+              <h3 class="calendar-title" id="calendarTitle">2026年1月</h3>
+
+              <button
+                type="button"
+                class="calendar-nav calendar-next"
+                id="calendarNext"
+                aria-label="次の月を表示"
+              >
+                &gt;
+              </button>
+            </div>
+
+            <table class="calendar">
+              <thead>
+                <tr>
+                  <th>日</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th>土</th>
+                </tr>
+              </thead>
+              <tbody id="calendarBody"></tbody>
+            </table>
+
+            <p class="calendar-note">※ 毎週火曜日は定休日です。</p>
+          </div>
+        </section>
       </section>
     </main>
 
