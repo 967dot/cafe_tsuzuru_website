@@ -638,43 +638,45 @@ span.logo-mark {
 .book-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
+}
+
+.book-card {
+  padding: 1.5rem;
+  border: 1px solid var(--color-neutral);
+  /* background: #fffaf2; */
+}
+
+.book-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
   margin-bottom: 1.5rem;
 }
-.book-grid .placeholder {
-  aspect-ratio: 3 / 4;
-}
-.pairing {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  padding: 2.5rem;
-  border: 1px solid var(--color-neutral);
-  background: #fff;
-  margin-block: 2rem;
-}
-.pairing img {
-  width: 120px;
-  aspect-ratio: 3 / 4;
-}
-.pairing .x {
-  font-size: 1.5rem;
+
+.book-category {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-en-heading);
+  font-size: 0.8rem;
   color: var(--color-accent);
+  letter-spacing: 0.12em;
 }
-.comment {
-  display: flex;
-  gap: 1rem;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid var(--color-neutral);
+
+.book-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
-.comment .avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--color-neutral);
-  flex-shrink: 0;
+
+.book-card p {
+  line-height: 1.8;
+  font-size: 0.8rem;
+}
+
+.book-pair {
+  margin-top: 1rem;
+  color: var(--color-sub);
+  font-size: 0.85rem;
 }
 
 /* --- Event --- */
@@ -944,7 +946,7 @@ span.logo-mark {
     grid-template-columns: repeat(2, 1fr);
   }
   .book-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
   .menu-item {
     grid-template-columns: 80px 1fr;
@@ -980,6 +982,12 @@ span.logo-mark {
 
   .menu-item img {
     max-width: 100%;
+  }
+
+  /* BOOKSページの書籍紹介のサイズ修正  --------- */
+  .book-card img {
+    max-width: 260px;
+    margin-inline: auto;
   }
 }
 
