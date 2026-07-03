@@ -503,6 +503,62 @@ span.logo-mark {
 .photo-row .placeholder {
   aspect-ratio: 16 / 10;
 }
+/* ABOUTページの3つの特徴  --------- */
+.about-detail {
+  padding-top: 0;
+}
+
+.about-detail-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding-block: 4.5rem;
+  border-top: 1px solid var(--color-neutral);
+}
+
+.about-detail-block:last-child {
+  border-bottom: 1px solid var(--color-neutral);
+}
+
+.about-detail-block-reverse .about-detail-image {
+  order: 2;
+}
+
+.about-detail-block-reverse .about-detail-text {
+  order: 1;
+}
+
+.about-detail-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.about-detail-text {
+  max-width: 520px;
+}
+
+.about-detail-text h3 {
+  margin-bottom: 1.5rem;
+  font-family: var(--font-ja-heading);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.about-detail-text p {
+  line-height: 2;
+}
+
+.section-kicker {
+  margin-bottom: 1rem;
+  font-family: var(--font-en-heading);
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  letter-spacing: 0.12em;
+}
 
 /* --- Coffee (Menu) --- */
 .menu-tabs {
@@ -853,7 +909,28 @@ span.logo-mark {
   .menu-item .price {
     grid-column: 2;
   }
+
+  /* ABOUTページの3つの特徴をスマホ/タブレット表示時で整える  --------- */
+  .about-detail-block {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 3.5rem;
+  }
+
+  .about-detail-block-reverse .about-detail-image,
+  .about-detail-block-reverse .about-detail-text {
+    order: initial;
+  }
+
+  .about-detail-text {
+    max-width: none;
+  }
+
+  .about-detail-text h3 {
+    font-size: 1.4rem;
+  }
 }
+
 /* iPhone 14 Pro Max未満のデバイスサイズを想定  --------- */
 @media (max-width: 430px) {
   /* Eventページの「次回のイベント」の余白感を調整  --------- */
