@@ -914,6 +914,15 @@ span.logo-mark {
   .hero-actions {
     justify-content: center;
   }
+  /* スマホ・タブレット表示時のTOPページの中段カードのCTAボタンのレイアウト崩れを整える  --------- */
+  .flow-card .btn {
+    display: block; /* 横並びをやめて、ブロック要素に */
+    width: 100%; /* 横幅いっぱいに広げる */
+    margin: 0 0 0.75rem; /* 上下の間隔（横の margin は不要に） */
+  }
+  .flow-card .btn:last-child {
+    margin-bottom: 0;
+  }
 
   /* 2カラム系を全部1カラムに */
   .hero,
