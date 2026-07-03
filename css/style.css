@@ -679,6 +679,11 @@ span.logo-mark {
   font-size: 0.85rem;
 }
 
+.books-cta {
+  margin-top: 3rem;
+  text-align: center;
+}
+
 /* --- Event --- */
 .event-next {
   display: grid;
@@ -988,6 +993,10 @@ span.logo-mark {
   .book-card img {
     max-width: 260px;
     margin-inline: auto;
+  }
+
+  .books-cta {
+    margin-top: 2rem;
   }
 }
 
