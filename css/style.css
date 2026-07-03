@@ -686,33 +686,71 @@ span.logo-mark {
 /* --- Event --- */
 .event-next {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 2.5rem;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem;
   align-items: center;
-  padding: 2.5rem;
-  border: 1px solid var(--color-neutral);
-  background: #fff;
+  padding: 3rem;
+  border: 1px solid var(--color-accent);
+  background: rgba(255, 250, 242, 0.35);
   margin-bottom: var(--space-lg);
 }
-.event-next img {
+
+.event-next-image img {
+  width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  width: 100%;
+  display: block;
 }
 
-.event-next h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.event-next-body {
+  max-width: 520px;
 }
-.event-meta {
+
+.event-next-body h3 {
+  margin-bottom: 1.5rem;
+  font-family: var(--font-ja-heading);
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  line-height: 1.6;
+}
+
+.event-next-body p {
   font-size: 0.9rem;
-  line-height: 2.2;
-  margin-bottom: 1.75rem;
+  line-height: 2;
 }
+
+.event-meta {
+  margin: 1.75rem 0;
+}
+
+.event-meta div {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
 .event-meta dt {
-  display: inline;
+  font-size: 0.9rem;
   color: var(--color-sub);
 }
+
+.event-meta dd {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.event-reserve-btn {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-base);
+}
+
+.event-reserve-btn:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: var(--color-base);
+}
+
 .report-item {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -996,6 +1034,28 @@ span.logo-mark {
 
   .books-cta {
     margin-top: 2rem;
+  }
+  /* EVENTページの「次回のイベント」  --------- */
+  .event-next {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .event-next-body {
+    max-width: none;
+  }
+  /* 見出し「第4回 読書会「旅する本棚」」のフォントサイズ調整  --------- */
+
+  .event-next-body h3 {
+    font-size: 1.125rem;
+  }
+  /* 「次回のイベント」の本文のフォントサイズ調整  --------- */
+  .event-next-body .event-next-text {
+    font-size: 0.8rem;
+  }
+
+  .event-meta div {
+    grid-template-columns: 80px 1fr;
   }
 }
 
