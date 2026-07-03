@@ -561,6 +561,14 @@ span.logo-mark {
 }
 
 /* --- Coffee (Menu) --- */
+.lead-text {
+  max-width: 560px;
+  margin: 2.5rem auto 0;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--color-main);
+}
 .menu-tabs {
   display: flex;
   justify-content: center;
