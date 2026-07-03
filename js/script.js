@@ -1,3 +1,33 @@
+// ABOUTページのメニュータブ切り替え
+const menuButtons = document.querySelectorAll(".menu-tabs button");
+const menuItems = document.querySelectorAll(".menu-item");
+
+menuButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
+    menuButtons.forEach((btn) => {
+      btn.classList.remove("is-active");
+    });
+
+    button.classList.add("is-active");
+
+    menuItems.forEach((item) => {
+      if (item.dataset.category === filter) {
+        item.classList.remove("is-hidden");
+      } else {
+        item.classList.add("is-hidden");
+      }
+    });
+  });
+});
+
+menuItems.forEach((item) => {
+  if (item.dataset.category !== "coffee") {
+    item.classList.add("is-hidden");
+  }
+});
+
 /* =========================================================
    script.js — スマホのハンバーガーメニュー開閉
    学んだ classList.toggle / addEventListener / aria の実戦版

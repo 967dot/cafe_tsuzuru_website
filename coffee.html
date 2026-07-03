@@ -58,43 +58,137 @@
             深煎りを中心に、読書や思索の時間に寄り添う珈琲をご用意しています。
           </p>
         </div>
-        <!-- タブ（見た目だけのラフ。切替JSは後で足してもOK） -->
+        <!-- タブ -->
         <div class="menu-tabs">
-          <button class="is-active">コーヒー</button>
-          <button>フード</button>
-          <button>セット</button>
+          <button type="button" class="is-active" data-filter="coffee">
+            コーヒー
+          </button>
+          <button type="button" data-filter="food">フード</button>
+          <button type="button" data-filter="set">セット</button>
         </div>
 
         <!-- メニュー一覧 -->
         <div class="menu-list">
-          <div class="menu-item">
-            <img src="img/coffee-darkroast.jpg" alt="本日のコーヒー" />
-            <div>
-              <h4>本日のコーヒー</h4>
-              <p class="opt">Hot / Ice</p>
+          <!-- Coffee 7点 -->
+          <article class="menu-item" data-category="coffee">
+            <img src="img/coffee-darkroast.jpg" alt="本日の深煎り珈琲" />
+            <div class="menu-item-body">
+              <h3>本日の深煎り珈琲</h3>
+              <p>香ばしさと苦味の余韻を楽しめる、喫茶 綴ルの定番珈琲。</p>
+              <p class="price">¥600</p>
             </div>
-            <p class="price">¥600</p>
-          </div>
-          <div class="menu-item">
-            <img src="img/coffee-caffè e llatte.jpg" alt="カフェラテ" />
-            <div>
-              <h4>カフェラテ</h4>
-              <p class="opt">Hot / Ice</p>
-            </div>
-            <p class="price">¥650</p>
-          </div>
-          <div class="menu-item">
-            <img src="img/coffee-morningset.jpg" alt="モーニングセット" />
-            <div>
-              <h4>モーニングセット</h4>
-              <p class="opt">コーヒー＋トースト＋サラダ</p>
-            </div>
-            <p class="price">¥880</p>
-          </div>
-        </div>
+          </article>
 
-        <div class="section-head" style="margin-top: 3rem">
-          <a href="#" class="btn">メニュー一覧を見る</a>
+          <article class="menu-item" data-category="coffee">
+            <img src="img/coffee-caffè e llatte.jpg" alt="カフェラテ" />
+            <div class="menu-item-body">
+              <h3>カフェラテ</h3>
+              <p>深煎りの力強さとミルクの柔らかさを合わせた一杯。</p>
+              <p class="price">¥650</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="coffee">
+            <img src="img/coffee-coldbrew.jpg" alt="水出しアイスコーヒー" />
+            <div class="menu-item-body">
+              <h3>水出しアイスコーヒー</h3>
+              <p>時間をかけて抽出した、すっきりとした苦味のアイスコーヒー。</p>
+              <p class="price">¥650</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="coffee">
+            <img src="img/coffee-blend.jpg" alt="綴ルブレンド" />
+            <div class="menu-item-body">
+              <h3>綴ルブレンド</h3>
+              <p>
+                読書の余韻に寄り添う、香りとコクのバランスを整えたブレンド。
+              </p>
+              <p class="price">¥620</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="coffee">
+            <img src="img/coffee-café au lait.jpg" alt="カフェオレ" />
+            <div class="menu-item-body">
+              <h3>カフェオレ</h3>
+              <p>
+                珈琲の香ばしさを残しながら、やさしい口当たりに仕上げました。
+              </p>
+              <p class="price">¥650</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="coffee">
+            <img src="img/coffee-decaf.jpg" alt="デカフェコーヒー" />
+            <div class="menu-item-body">
+              <h3>デカフェコーヒー</h3>
+              <p>
+                夜の読書にも合わせやすい、穏やかな味わいのカフェインレス珈琲。
+              </p>
+              <p class="price">¥620</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="coffee">
+            <img src="img/coffee-seasonal.jpg" alt="季節の珈琲" />
+            <div class="menu-item-body">
+              <h3>季節の珈琲</h3>
+              <p>
+                季節ごとの豆を使い、香りの変化を楽しめる一杯をご用意します。
+              </p>
+              <p class="price">¥680</p>
+            </div>
+          </article>
+
+          <!-- Food 3点 -->
+          <article class="menu-item" data-category="food">
+            <img src="img/coffee-thicktoast.jpg" alt="厚切りトースト" />
+            <div class="menu-item-body">
+              <h3>厚切りトースト</h3>
+              <p>外は香ばしく、中はふんわり。珈琲に合うシンプルなトースト。</p>
+              <p class="price">¥480</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="food">
+            <img src="img/coffee-cheesecake.jpg" alt="自家製チーズケーキ" />
+            <div class="menu-item-body">
+              <h3>自家製チーズケーキ</h3>
+              <p>
+                濃厚さを残しつつ、珈琲の苦味に合うよう軽やかに仕上げました。
+              </p>
+              <p class="price">¥560</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="food">
+            <img src="img/coffee-scone.jpg" alt="焼き菓子スコーン" />
+            <div class="menu-item-body">
+              <h3>焼き菓子スコーン</h3>
+              <p>読書の合間につまみやすい、素朴な甘さの焼き菓子です。</p>
+              <p class="price">¥420</p>
+            </div>
+          </article>
+
+          <!-- Set 2点 -->
+          <article class="menu-item" data-category="set">
+            <img src="img/coffee-biscuitset.jpg" alt="読書のお茶菓子セット" />
+            <div class="menu-item-body">
+              <h3>読書のお茶菓子セット</h3>
+              <p>珈琲と、選書に合わせた小さなお茶菓子のセット。</p>
+              <p class="price">¥900</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="set">
+            <img src="img/coffee-morningset.jpg" alt="モーニングセット" />
+            <div class="menu-item-body">
+              <h3>モーニングセット</h3>
+              <p>珈琲、トースト、サラダを合わせた、静かな朝のためのセット。</p>
+              <p class="price">¥880</p>
+            </div>
+          </article>
         </div>
       </section>
     </main>
