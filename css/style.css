@@ -354,8 +354,7 @@ span.logo-mark {
 .flow-card {
   text-align: center;
   padding: 2.5rem 2rem;
-  border: 1px solid var(--color-neutral);
-  background: #fff;
+  border: 1px solid var(--color-accent);
 }
 .flow-card .btn {
   margin: 0 0.3rem;
