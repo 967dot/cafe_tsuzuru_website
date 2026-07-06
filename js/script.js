@@ -126,7 +126,7 @@ if (calendarBody && calendarTitle && calendarPrev && calendarNext) {
 
 /* =========================================================
    script.js — スマホのハンバーガーメニュー開閉
-   学んだ classList.toggle / addEventListener / aria の実戦版
+   classList.toggle / addEventListener / aria の実戦版
    ========================================================= */
 
 const hamburger = document.getElementById("hamburger");
