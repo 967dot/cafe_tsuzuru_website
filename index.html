@@ -20,6 +20,20 @@
     <!-- CSS（reset → style の順。後勝ち） -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RZ6PXLS0BM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RZ6PXLS0BM");
+    </script>
   </head>
   <body>
     <!-- ============ 共通ヘッダー（全ページ同じ。直すときは全ファイル揃えて直す） ============ -->
