@@ -24,6 +24,14 @@ HTML / CSS / JavaScript の基礎を用いて、複数ページ構成の静的We
 - 複数ページ構成
 - CTA導線設計
 
+## 公開URL
+
+https://intp.site/3181/cafe-tsuzuru/index.html
+
+## Repository
+
+https://github.com/967dot/cafe_tsuzuru_website
+
 ## 今後の改善予定
 
 - セキュリティ観点でのフォーム設計見直し
